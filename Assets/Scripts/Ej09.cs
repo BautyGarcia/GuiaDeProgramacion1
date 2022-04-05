@@ -16,22 +16,16 @@ public class Ej09 : MonoBehaviour
 
     */ 
     // Start is called before the first frame update
-    public string nom1,nom2,nom3;
-    int por1,por2,por3;
-    public int cap1,cap2,cap3;
-    int MontoTotal;
+    public string Nombre1,Nombre2,Nombre3;
+    public float Capital1,Capital2,Capital3;
+    float MontoTotal;
     void Start()
     {
-        MontoTotal = cap1 + cap2 + cap3;
+        MontoTotal = Capital1 + Capital2 + Capital3;
 
-        por1 = cap1 * 100 / MontoTotal;
-        por2 = cap2 * 100 / MontoTotal;
-        por3 = cap3 * 100 / MontoTotal;
-
-        Debug.Log(nom1+": Capital aportado: $"+cap1+", Porcentaje del capital: "+por1+"%");
-        Debug.Log(nom2+": Capital aportado: $"+cap2+", Porcentaje del capital: "+por2+"%");
-        Debug.Log(nom3+": Capital aportado: $"+cap3+", Porcentaje del capital: "+por3+"%");
-        Debug.Log("Monto total aportado: $"+MontoTotal);
+        Debug.Log(Nombre1+": Capital aportado: $"+Capital1+", Porcentaje del capital: "+Capital1 * 100 / MontoTotal+"%"+", Monto total aportado: $"+MontoTotal);
+        Debug.Log(Nombre2+": Capital aportado: $"+Capital2+", Porcentaje del capital: "+Capital2 * 100 / MontoTotal+"%"+", Monto total aportado: $"+MontoTotal);
+        Debug.Log(Nombre3+": Capital aportado: $"+Capital3+", Porcentaje del capital: "+Capital3 * 100 / MontoTotal+"%"+", Monto total aportado: $"+MontoTotal);
     }
 
     // Update is called once per frame

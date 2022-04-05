@@ -20,7 +20,7 @@ public class Ej15 : MonoBehaviour
     bool estaEnB;
     bool estaEnAmbos;
     bool estaEnNinguno;
-    async void Start()
+    void Start()
     {
         if (num1 < 10){
             estaEnA = true;
